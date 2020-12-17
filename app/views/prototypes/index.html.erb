@@ -9,7 +9,7 @@
       </div>
     <%# // ログインしているときは上記を表示する %>
     <div class="card__wrapper">
-      <%= render partial: "prototype", collection: @prototypes %>
+      <%= render partial: "prototype", locals: { prototype: @prototype }, collection: @prototypes %>
     </div>
   </div>
 </main>
